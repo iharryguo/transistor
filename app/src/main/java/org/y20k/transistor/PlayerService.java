@@ -204,6 +204,9 @@ public final class PlayerService extends MediaBrowserServiceCompat implements Tr
 
             // update controller - start playback
             mController.getTransportControls().play();
+            PlaybackParameters playbackParameters = new PlaybackParameters(0.75F, 1.0F);
+            mPlayer.setPlaybackParameters(playbackParameters);
+
         }
 
         // ACTION STOP
